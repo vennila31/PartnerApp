@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:src="@drawable/image"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+
+            android:padding="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_upload"
+            android:background="@drawable/ngbutton"
+            android:textAllCaps="false"
+            android:text="Upload"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/profile"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/personalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_light"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/upload"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Info"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/_13sdp"
+                android:drawableStart="@drawable/ic_user_small"
+                app:drawableTint="@color/app_color"
+                android:drawablePadding="@dimen/_5sdp"
+                android:layout_margin="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/edit_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:layout_margin="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.4"
+                android:orientation="vertical"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/name_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="@dimen/_11sdp"
+                android:drawableStart="@drawable/ic_bookmark"
+                app:drawableTint="@color/black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_14sdp"
+                app:layout_constraintTop_toBottomOf="@id/label"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="@id/label"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/name_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Vennila G"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_14sdp"
+                app:layout_constraintTop_toBottomOf="@id/label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mobile_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textSize="@dimen/_11sdp"
+                android:drawableStart="@drawable/ic_phone"
+                app:drawableTint="@color/black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/name_label"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="@id/label"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mobile_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="958721544"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/name_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/email_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Email id"
+                android:textSize="@dimen/_11sdp"
+                android:drawableStart="@drawable/ic_mail"
+                app:drawableTint="@color/black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/mobile_label"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="@id/label"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/email_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="vennila123@gmail.com"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/mobile_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/licenceLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Licence"
+                android:textSize="@dimen/_11sdp"
+                android:drawableStart="@drawable/ic_card"
+                app:drawableTint="@color/black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/email_label"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="@id/label"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/licence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/email_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_yellow"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/personalInfo">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/edit_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/addressLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Address Details"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_13sdp"
+                android:drawableStart="@drawable/ic_map_pin"
+                android:drawablePadding="@dimen/_5sdp"
+
+                app:drawableTint="@color/orange"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.4"
+                android:orientation="vertical"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/address_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Address Detail"
+                android:textSize="@dimen/_11sdp"
+                android:drawableStart="@drawable/ic_map_pin"
+                app:drawableTint="@color/black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_14sdp"
+                app:layout_constraintTop_toBottomOf="@id/addressLabel"
+                app:layout_constraintEnd_toStartOf="@id/guideline1"
+                app:layout_constraintStart_toStartOf="@id/addressLabel"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/address_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="12, Chinna street - Mylapore                  Chennai-28"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_14sdp"
+                app:layout_constraintTop_toBottomOf="@id/addressLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline1"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/proofLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Address Proof"
+                android:textSize="@dimen/_11sdp"
+                android:drawableStart="@drawable/ic_card"
+                app:drawableTint="@color/black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/address_value"
+                app:layout_constraintEnd_toStartOf="@id/guideline1"
+                app:layout_constraintStart_toStartOf="@id/address_label"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/address_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline1"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            android:text="Add Address"
+            android:textSize="@dimen/_11sdp"
+            android:textAllCaps="false"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/ngbutton"
+            android:textColor="@color/white"
+            android:drawablePadding="@dimen/_5sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:drawableStart="@drawable/ic_add"
+            app:layout_constraintTop_toBottomOf="@id/constLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            app:layout_constraintTop_toBottomOf="@id/addAddress"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/grey_light"/>
+
+        <!-- <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/label2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Payment Details"
+             android:textColor="@color/app_color"
+             android:textSize="@dimen/_11sdp"
+             android:drawableStart="@drawable/ic_card"
+             android:drawablePadding="@dimen/_5sdp"
+             android:layout_margin="@dimen/_16sdp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/view2"
+             />
+ -->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

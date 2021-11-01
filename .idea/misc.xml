@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/bg_drop_down.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/bg_edit_text.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/bg_green.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/bg_login.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/bg_submit.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/bottom_icon_bg.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/bottom_nav_color.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_add.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_bell.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_bookmark.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_card.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_check.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_chevron_down.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_clock.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_clock_small.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_close.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_deliver.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_delivery_man.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_edit.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_file_text.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_list.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_mail.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_map_pickup.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_map_pin.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_map_pin_white.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_order.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_phone.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_shop.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_take_away.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_toggle_right.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_upload.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_user.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_user_bg.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ic_user_small.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/image.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/drawable/ngbutton.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/active_order_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/activity_create_profile.xml" value="0.2" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/activity_map.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/activity_maps.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/activity_my_orders.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/activity_otp.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/alert_success.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/completed_order_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/fragment_order_history.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/fragment_orders.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/item_list.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/layout_parent.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/layout_second.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/map_layout.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/new_order_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/order_history_page.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/orders_list.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/layout/total_list.xml" value="0.25" />
+        <entry key="..\:/Users/venni/AndroidStudioProjects/PartnerApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

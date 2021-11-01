@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="toolbar_title_text">
+
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="welcome_text">
+
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/app_color</item>
+
+    </style>
+
+
+    <style name="text_10sp_white">
+
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+    <style name="text_11sp_white">
+
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+    <style name="text_12sp_white">
+
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="text_13sp_white">
+
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="text_13sp_app_color">
+
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/app_color</item>
+
+    </style>
+
+
+    <style name="text_16sp_white">
+
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+    <style name="text_18sp_white">
+
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="text_20sp_white">
+
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="text_12sp_black">
+
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_14sp_blue">
+
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="text_12sp_appcolor">
+
+        <item name="android:textSize">@dimen/_12sdp</item>
+    <item name="android:textColor">@color/app_color</item>
+    </style>
+
+    <style name="text_13sp_orange">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/orange</item>
+
+    </style>
+
+</resources>

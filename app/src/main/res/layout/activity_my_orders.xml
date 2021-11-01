@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ui.orders.MyOrdersActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/grey_light"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/order_id"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableStart="@drawable/ic_file_text"
+        style="@style/text_12sp_black"
+        app:drawableTint="@color/orange"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@id/profile"
+        app:layout_constraintStart_toEndOf="@id/profile"
+        app:layout_constraintEnd_toStartOf="@id/orderId"
+        app:layout_constraintBottom_toBottomOf="@id/profile"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/orderId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="123456789"
+        style="@style/text_14sp_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/time"
+        app:layout_constraintTop_toTopOf="@id/time"
+        app:layout_constraintStart_toEndOf="@id/label1"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="04.00 PM"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableStart="@drawable/ic_clock_small"
+        app:drawableTint="@color/orange"
+        style="@style/text_12sp_black"
+
+        app:layout_constraintStart_toEndOf="@id/orderId"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/label1"
+        />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/grey_light"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/profile">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.16"
+                android:orientation="vertical"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.4"
+                android:orientation="vertical"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.63"
+                android:orientation="vertical"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.82"
+                android:orientation="vertical"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/startLabel"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_shop"
+                android:tint="@color/app_color"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@id/guideline11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/startValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/app_color"
+                app:layout_constraintEnd_toEndOf="@id/startLabel"
+                app:layout_constraintStart_toStartOf="@id/startLabel"
+                app:layout_constraintTop_toBottomOf="@id/startLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30 PM"
+
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintTop_toBottomOf="@id/startValue"
+                app:layout_constraintStart_toStartOf="@id/startValue"
+                app:layout_constraintEnd_toEndOf="@id/startValue"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/oPlacedLabel"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_shop"
+                android:tint="@color/app_color"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@id/guideline22"
+                app:layout_constraintStart_toEndOf="@id/guideline11"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/oPlacedValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reached Shop"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/app_color"
+                app:layout_constraintEnd_toEndOf="@id/oPlacedLabel"
+                app:layout_constraintStart_toStartOf="@id/oPlacedLabel"
+                app:layout_constraintTop_toBottomOf="@id/oPlacedLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30 PM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/oPlacedValue"
+                app:layout_constraintStart_toStartOf="@id/oPlacedValue"
+                app:layout_constraintEnd_toEndOf="@id/oPlacedValue"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/pickedLabel"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:tint="@color/app_color"
+                android:src="@drawable/ic_take_away"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@id/guideline33"
+                app:layout_constraintStart_toEndOf="@id/guideline22"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pickedValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Picked"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/app_color"
+                app:layout_constraintEnd_toEndOf="@id/pickedLabel"
+                app:layout_constraintStart_toStartOf="@id/pickedLabel"
+                app:layout_constraintTop_toBottomOf="@id/pickedLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.45 PM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintTop_toBottomOf="@id/pickedValue"
+                app:layout_constraintStart_toStartOf="@id/pickedValue"
+                app:layout_constraintEnd_toEndOf="@id/pickedValue"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/onWayLabel"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_delivery_man"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@id/guideline44"
+                app:layout_constraintStart_toEndOf="@id/guideline33"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/onWayValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On the way"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/app_color"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@id/onWayLabel"
+                app:layout_constraintStart_toStartOf="@id/onWayLabel"
+                app:layout_constraintTop_toBottomOf="@id/onWayLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30 PM"
+
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintTop_toBottomOf="@id/onWayValue"
+                app:layout_constraintStart_toStartOf="@id/onWayValue"
+                app:layout_constraintEnd_toEndOf="@id/onWayValue"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/deliveredLabel"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:tint="@color/app_color"
+                android:src="@drawable/ic_deliver"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline44"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/deliveredValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/app_color"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@id/deliveredLabel"
+                app:layout_constraintStart_toStartOf="@id/deliveredLabel"
+                app:layout_constraintTop_toBottomOf="@id/deliveredLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30 PM"
+
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintTop_toBottomOf="@id/deliveredValue"
+                app:layout_constraintStart_toStartOf="@id/deliveredValue"
+                app:layout_constraintEnd_toEndOf="@id/deliveredValue"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/light_yellow"
+        app:layout_constraintTop_toBottomOf="@id/constLayout">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/itemLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_file_text"
+            style="@style/text_13sp_orange"
+            app:drawableTint="@color/orange"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/item"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemLabel"
+            app:layout_constraintEnd_toEndOf="@id/guideline1"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/qty_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/quantity"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/itemLabel"
+            app:layout_constraintEnd_toStartOf="@id/guideline2"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/total"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/itemLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/item_label"
+            />
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:background="@color/grey_light"
+            app:layout_constraintTop_toBottomOf="@id/rvList" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/grantTtlLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/grant_total"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/rvList"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/grantTtlValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="@string/Rs"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/grantTtlLabel"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/grey_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/grantTtlLabel" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/grey_light"
+        android:text="Distance    2 Km"
+        style="@style/text_13sp_app_color"
+        android:padding="@dimen/_5sdp"
+        android:drawablePadding="@dimen/_8sdp"
+        android:drawableStart="@drawable/ic_map_pin"
+        app:layout_constraintTop_toBottomOf="@id/consLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pickupLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Pick up location"
+        style="@style/text_13sp_app_color"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:drawablePadding="@dimen/_8sdp"
+        android:drawableStart="@drawable/ic_map_pin"
+        app:layout_constraintTop_toBottomOf="@id/distance"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pickup_address1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="KKR fish stall ,Anna nagar"
+        android:layout_margin="@dimen/_10sdp"
+        style="@style/text_12sp_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pickupLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pickUpLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_map_pickup"
+            android:layout_marginEnd="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="@id/pickup_address1"
+            app:layout_constraintBottom_toBottomOf="@id/pickup_address1"
+            />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pickup_address2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="22,1st cross street,Anna nagar-Chennai-600 106."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="@id/pickup_address1"
+        app:layout_constraintTop_toBottomOf="@id/pickup_address1"
+        app:layout_constraintStart_toStartOf="@id/pickup_address1"
+        />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey_light"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/pickup_address2"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dropLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Drop location"
+            style="@style/text_13sp_app_color"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/drop_address1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="22,1st cross street,Anna nagar"
+            android:layout_margin="@dimen/_10sdp"
+            style="@style/text_12sp_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dropLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dropLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_map_pickup"
+            android:layout_marginEnd="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/drop_address1"
+            app:layout_constraintBottom_toBottomOf="@id/drop_address1"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/drop_address2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Chennai-600 106."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintEnd_toEndOf="@id/drop_address1"
+            app:layout_constraintTop_toBottomOf="@id/drop_address1"
+            app:layout_constraintStart_toStartOf="@id/drop_address1"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/drop_address2"
+            android:background="@color/grey_light"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/customer_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Customer Information"
+                style="@style/text_13sp_app_color"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:drawablePadding="@dimen/_8sdp"
+                android:drawableStart="@drawable/ic_bookmark"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/nameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/customer_info"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/numberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameLabel"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Siva"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/customer_info"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_user_bg"
+                android:layout_marginEnd="@dimen/_13sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/name"
+                app:layout_constraintBottom_toBottomOf="@id/name"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9224545656"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/nameLabel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/paymentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Payment"
+            style="@style/text_13sp_app_color"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_card"
+            app:layout_constraintTop_toBottomOf="@id/info"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/payModeLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Payment mode"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/paymentLabel"
+            app:layout_constraintTop_toBottomOf="@id/paymentLabel"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/payMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/payModeLabel"
+            app:layout_constraintTop_toTopOf="@id/payModeLabel"
+            app:layout_constraintBottom_toBottomOf="@id/payModeLabel"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reject"
+            style="@style/text_11sp_white"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_submit"
+            android:drawableStart="@drawable/ic_close"
+            android:drawablePadding="@dimen/_10sdp"
+
+            android:layout_marginTop="@dimen/_16sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:text="Reject"
+            android:textSize="@dimen/_13sdp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/payModeLabel"
+            app:layout_constraintStart_toStartOf="@id/payModeLabel"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_green"
+
+            android:text="Accept"
+            android:textSize="@dimen/_13sdp"
+            android:textAllCaps="false"
+            style="@style/text_11sp_white"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:drawableStart="@drawable/ic_check"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/reject"
+            app:layout_constraintTop_toBottomOf="@id/payModeLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
